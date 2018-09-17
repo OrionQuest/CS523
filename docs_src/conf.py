@@ -31,7 +31,7 @@
 # ones.
 extensions = ['breathe','sphinx.ext.mathjax']
 breathe_projects = { "nova": "../build/docs/doxygen/xml" }
-breathe_default_project = "CS 323"
+breathe_default_project = "CS 523"
 breathe_default_members = ('members', 'undoc-members')
 
 # Add any paths that contain templates here, relative to this directory.
@@ -51,8 +51,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'CS 323'
-copyright = u'2017, Mridul Aanjaneya'
+project = u'CS 523'
+copyright = u'2018, Mridul Aanjaneya'
 author = u'Mridul Aanjaneya'
 
 # The version info for the project you're documenting, acts as replacement for
