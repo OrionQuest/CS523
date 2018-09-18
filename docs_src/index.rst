@@ -69,6 +69,7 @@ Contents:
 
     Ordinary Differential Equations <ode>
     Rigid Body Dynamics <rigid>
+    Volumetric Elastic Solids <elastic>
 
 Recommended Books:
 ------------------
