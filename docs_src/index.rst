@@ -72,6 +72,15 @@ Contents:
     Volumetric Elastic Solids <elastic>
     Linear Systems of Equations <linear>
 
+Coding Resources:
+-----------------
+
+1. `Open Dynamics Engine <https://www.ode.org/>`_
+2. `Bullet Physics <https://pybullet.org/wordpress/>`_
+3. `DART <https://dartsim.github.io/>`_
+4. `Chrono <https://projectchrono.org/>`_
+5. `Mujoco <http://www.mujoco.org/>`_
+
 Recommended Books:
 ------------------
 
