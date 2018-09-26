@@ -51,6 +51,7 @@ News and Announcements:
 -----------------------
 
 * (09/12) `Homework #1 <homeworks/homework1.html>`_ is due on (09/26).
+* Project proposal along with names of team members is due on (10/12).
 
 .. toctree::
     :numbered:
