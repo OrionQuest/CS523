@@ -91,3 +91,5 @@ Recommended Books:
 1. R\. Bridson, `Fluid Simulation for Computer Graphics <https://www.amazon.com/Simulation-Computer-Graphics-Robert-Bridson/dp/1482232839/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=R85JH841W3V1K83RY635>`_, AK Peters/CRC Press, second edition, 2015\.
 
 2. D\. House and J\. C\. Keyser, `Foundations of Physically Based Modeling and Animation <https://www.amazon.com/Foundations-Physically-Based-Modeling-Animation/dp/1482234602/ref=pd_sbs_14_4/137-8775444-7923363?_encoding=UTF8&pd_rd_i=1482234602&pd_rd_r=7d853d04-ba1a-11e8-87eb-1be919d0e38f&pd_rd_w=Az82T&pd_rd_wg=ivg6z&pf_rd_i=desktop-dp-sims&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=53dead45-2b3d-4b73-bafb-fe26a7f14aac&pf_rd_r=C0WSJ3P419MMFWB1QW84&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&psc=1&refRID=C0WSJ3P419MMFWB1QW84>`_, AK Peters/CRC Press, 2016\.
+
+3. S\. Osher and R\. Fedkiw, `Level Set Methods and Dynamic Implicit Surfaces <https://www.amazon.com/Methods-Implicit-Surfaces-Mathematical-Sciences/dp/0387954821>`_, Springer, 2003.
