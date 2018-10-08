@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>2. Project Proposal &mdash; CS 523 1.0 documentation</title>
+    <title>3. Homework #2 &mdash; CS 523 1.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="CS 523 1.0 documentation" href="../index.html" />
-    <link rel="next" title="3. Homework #2" href="homework2.html" />
-    <link rel="prev" title="1. Homework #1" href="homework1.html" /> 
+    <link rel="next" title="1. Ordinary Differential Equations" href="../ode.html" />
+    <link rel="prev" title="2. Project Proposal" href="proposal.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -36,10 +36,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="homework2.html" title="3. Homework #2"
+          <a href="../ode.html" title="1. Ordinary Differential Equations"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="homework1.html" title="1. Homework #1"
+          <a href="proposal.html" title="2. Project Proposal"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">CS 523 1.0 documentation</a> &raquo;</li> 
       </ul>
@@ -50,22 +50,32 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="project-proposal">
-<h1>2. Project Proposal<a class="headerlink" href="#project-proposal" title="Permalink to this headline">¶</a></h1>
-<p>Below are some guidelines on how to propose a topic for your term project.
-Please use Sakai to submit your proposal as a single PDF file.</p>
+  <div class="section" id="homework-2">
+<h1>3. Homework #2<a class="headerlink" href="#homework-2" title="Permalink to this headline">¶</a></h1>
+<p>For all programming assignments, please turn in your code along with your
+solution. Submissions should be made on Sakai.</p>
 <div class="topic">
-<p class="topic-title first">Proposal Guidelines</p>
-<p>Every project proposal must include the following details:</p>
+<p class="topic-title first">Problem 1</p>
+<p>Given an input shape, specified using an analytic signed distance function, store
+it as a discrete signed distance function on the nodes of a uniform Cartesian grid.
+Then, given a random point in space, write routines to:</p>
 <ul class="simple">
-<li>Topic.</li>
-<li>Names of all team members.</li>
-<li>Brief description of the intended goals.</li>
-<li>Important references.</li>
-<li>A step-by-step description of all associated challenges.</li>
-<li>A timeline description of how the challenges will be solved, and</li>
-<li>Individual responsibilities of all team members.</li>
+<li>identify whether the point is inside or outside the shape, and</li>
+<li>project the point to the closest point on the surface of the shape. (Note
+that this may require few iterations to ensure convergence. At each step,
+you should compute the normal, and move the point by an amount equal to
+its distance value along the normal direction.)</li>
 </ul>
+<p>Test your code for three different shapes (such as a circle, ellipse, and
+square) both in 2D and in 3D. Use 10 points chosen uniformly at random for
+each problem.</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Problem 2</p>
+<p>Using your solution to Problem 1, implement the collision
+detection/resolution algorithm from <a class="reference external" href="https://www.cs.ubc.ca/~rbridson/docs/rigid_bodies.pdf">this paper</a> (see Section 6) in your rigid body simulator designed in Homework #1.
+You may also want to consult <a class="reference external" href="https://www.cs.cmu.edu/~baraff/sigcourse/notesd2.pdf">these notes</a> for a more detailed
+explanation.</p>
 </div>
 </div>
 
@@ -76,15 +86,15 @@ Please use Sakai to submit your proposal as a single PDF file.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="homework1.html"
-                        title="previous chapter">1. Homework #1</a></p>
+  <p class="topless"><a href="proposal.html"
+                        title="previous chapter">2. Project Proposal</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="homework2.html"
-                        title="next chapter">3. Homework #2</a></p>
+  <p class="topless"><a href="../ode.html"
+                        title="next chapter">1. Ordinary Differential Equations</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/homeworks/proposal.txt"
+      <li><a href="../_sources/homeworks/homework2.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -112,10 +122,10 @@ Please use Sakai to submit your proposal as a single PDF file.</p>
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="homework2.html" title="3. Homework #2"
+          <a href="../ode.html" title="1. Ordinary Differential Equations"
              >next</a> |</li>
         <li class="right" >
-          <a href="homework1.html" title="1. Homework #1"
+          <a href="proposal.html" title="2. Project Proposal"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">CS 523 1.0 documentation</a> &raquo;</li> 
       </ul>
