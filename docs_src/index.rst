@@ -75,6 +75,7 @@ Contents:
     Rigid Body Dynamics <rigid>
     Volumetric Elastic Solids <elastic>
     Linear Systems of Equations <linear>
+    Marching Cubes <marching_cubes>
 
 Coding Resources:
 -----------------
