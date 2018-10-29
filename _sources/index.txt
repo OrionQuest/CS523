@@ -76,6 +76,7 @@ Contents:
     Volumetric Elastic Solids <elastic>
     Linear Systems of Equations <linear>
     Marching Cubes <marching_cubes>
+    Matrix-Vector Product <dot_product>
 
 Coding Resources:
 -----------------
