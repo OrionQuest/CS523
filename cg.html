@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>6. Matrix-Vector Product &mdash; CS 523 1.0 documentation</title>
+    <title>7. Introduction to Conjugate Gradients &mdash; CS 523 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -25,8 +25,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="CS 523 1.0 documentation" href="index.html" />
-    <link rel="next" title="7. Introduction to Conjugate Gradients" href="cg.html" />
-    <link rel="prev" title="5. Marching Cubes" href="marching_cubes.html" /> 
+    <link rel="prev" title="6. Matrix-Vector Product" href="dot_product.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -36,10 +35,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="cg.html" title="7. Introduction to Conjugate Gradients"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="marching_cubes.html" title="5. Marching Cubes"
+          <a href="dot_product.html" title="6. Matrix-Vector Product"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">CS 523 1.0 documentation</a> &raquo;</li> 
       </ul>
@@ -50,11 +46,11 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="matrix-vector-product">
-<h1>6. Matrix-Vector Product<a class="headerlink" href="#matrix-vector-product" title="Permalink to this headline">¶</a></h1>
-<p>The following example shows an image blurring application implemented as a sparse
-matrix-vector product.</p>
-<p><a class="reference external" href="https://orionquest.github.io/Numacom/matrices.html#matrix-vector-product">Image Blurring</a></p>
+  <div class="section" id="introduction-to-conjugate-gradients">
+<h1>7. Introduction to Conjugate Gradients<a class="headerlink" href="#introduction-to-conjugate-gradients" title="Permalink to this headline">¶</a></h1>
+<p>We review the Conjugate Gradients method, which is an iterative Krylov solver
+for solving symmetric and positive definite (SPD) linear systems <span class="math">\(Ax=b\)</span>.</p>
+<p><a class="reference external" href="https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf">Lecture Notes</a></p>
 </div>
 
 
@@ -64,15 +60,12 @@ matrix-vector product.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="marching_cubes.html"
-                        title="previous chapter">5. Marching Cubes</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="cg.html"
-                        title="next chapter">7. Introduction to Conjugate Gradients</a></p>
+  <p class="topless"><a href="dot_product.html"
+                        title="previous chapter">6. Matrix-Vector Product</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/dot_product.txt"
+      <li><a href="_sources/cg.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -100,10 +93,7 @@ matrix-vector product.</p>
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="cg.html" title="7. Introduction to Conjugate Gradients"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="marching_cubes.html" title="5. Marching Cubes"
+          <a href="dot_product.html" title="6. Matrix-Vector Product"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">CS 523 1.0 documentation</a> &raquo;</li> 
       </ul>

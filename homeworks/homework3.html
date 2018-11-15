@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>3. Homework #2 &mdash; CS 523 1.0 documentation</title>
+    <title>4. Homework #3 &mdash; CS 523 1.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="CS 523 1.0 documentation" href="../index.html" />
-    <link rel="next" title="4. Homework #3" href="homework3.html" />
-    <link rel="prev" title="2. Project Proposal" href="proposal.html" /> 
+    <link rel="next" title="1. Ordinary Differential Equations" href="../ode.html" />
+    <link rel="prev" title="3. Homework #2" href="homework2.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -36,10 +36,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="homework3.html" title="4. Homework #3"
+          <a href="../ode.html" title="1. Ordinary Differential Equations"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="proposal.html" title="2. Project Proposal"
+          <a href="homework2.html" title="3. Homework #2"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">CS 523 1.0 documentation</a> &raquo;</li> 
       </ul>
@@ -50,32 +50,35 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="homework-2">
-<h1>3. Homework #2<a class="headerlink" href="#homework-2" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="homework-3">
+<h1>4. Homework #3<a class="headerlink" href="#homework-3" title="Permalink to this headline">¶</a></h1>
 <p>For all programming assignments, please turn in your code along with your
 solution. Submissions should be made on Sakai.</p>
 <div class="topic">
 <p class="topic-title first">Problem 1</p>
-<p>Given an input shape, specified using an analytic signed distance function, store
-it as a discrete signed distance function on the nodes of a uniform Cartesian grid.
-Then, given a random point in space, write routines to:</p>
-<ul class="simple">
-<li>identify whether the point is inside or outside the shape, and</li>
-<li>project the point to the closest point on the surface of the shape. (Note
-that this may require few iterations to ensure convergence. At each step,
-you should compute the normal, and move the point by an amount equal to
-its distance value along the normal direction.)</li>
-</ul>
-<p>Test your code for three different shapes (such as a circle, ellipse, and
-square) both in 2D and in 3D. Use 10 points chosen uniformly at random for
-each problem.</p>
-</div>
-<div class="topic">
-<p class="topic-title first">Problem 2</p>
-<p>Using your solution to Problem 1, implement the collision
-detection/resolution algorithm from <a class="reference external" href="https://www.cs.ubc.ca/~rbridson/docs/rigid_bodies.pdf">this paper</a> (see Section 6) in your rigid body simulator designed in Homework #1.
-You may also want to consult <a class="reference external" href="https://www.cs.cmu.edu/~baraff/sigcourse/notesd2.pdf">these notes</a> for a more detailed
-explanation.</p>
+<p>Consider a uniform <span class="math">\(N\times N\)</span> grid whose bottom left node is at the
+point <span class="math">\((-0.5,-0.5)\)</span> and top right node is at the point <span class="math">\((0.5,0.5)\)</span>.
+Define a circle <span class="math">\(C\)</span> centered at <span class="math">\((0,0)\)</span> and with radius
+<span class="math">\(0.25\)</span>. Label all voxels inside <span class="math">\(C\)</span> as <em>Interior</em>, and
+all other voxels as <em>Dirichlet</em>. Use the analytic function <span class="math">\(\phi=x^2 +
+y^2 - r^2\)</span> to define the Dirichlet values. However, as pointed out in class,
+for each Dirichlet voxel, project its cell center to the <em>nearest</em> point on
+the circle, compute the <span class="math">\(\phi\)</span>-value at that point, and use this as
+the Dirichlet value for the cell. In other words, if <span class="math">\(p\)</span> is the
+location of the cell center of a Dirichlet voxel, compute the point <span class="math">\(q=0.25*p\)</span>, and use the
+<span class="math">\(\phi\)</span>-value at <span class="math">\(q\)</span> for the Dirichlet value at <span class="math">\(p\)</span>.
+Set the right hand side to be the constant <span class="math">\(4\)</span> for each voxel.</p>
+<p>Using the methology discussed in class, write a <span class="math">\(\textsf{CG_System}\)</span>
+class and a <span class="math">\(\textsf{CG_Vector}\)</span> class, and solve the Poisson equation
+for the setup described above using <span class="math">\(\textsf{Conjugate Gradients}\)</span>.
+Report the <span class="math">\(L_\infty\)</span>-norm for the <em>error</em> computed as
+<span class="math">\(|\phi_\texttt{cell} - x^2 - y^2 + r^2|\)</span> for each voxel, for grids
+<span class="math">\(16\times16\)</span>, <span class="math">\(32\times32\)</span>, <span class="math">\(64\times64\)</span>, <span class="math">\(128\times128\)</span> and
+<span class="math">\(256\times256\)</span>. If your solution is correct, you should see the error
+decrease approximately by a factor of <span class="math">\(2\)</span> each time you double the
+grid resolution. Compute the <em>order of convergence</em>, defined as
+<span class="math">\(\log_2(e_{N\times N}/e_{2N\times2N})\)</span>, where <span class="math">\(e_{N\times N}\)</span>
+is the <span class="math">\(L_\infty\)</span>-norm of the error for an <span class="math">\(N\times N\)</span> grid.</p>
 </div>
 </div>
 
@@ -86,15 +89,15 @@ explanation.</p>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="proposal.html"
-                        title="previous chapter">2. Project Proposal</a></p>
+  <p class="topless"><a href="homework2.html"
+                        title="previous chapter">3. Homework #2</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="homework3.html"
-                        title="next chapter">4. Homework #3</a></p>
+  <p class="topless"><a href="../ode.html"
+                        title="next chapter">1. Ordinary Differential Equations</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/homeworks/homework2.txt"
+      <li><a href="../_sources/homeworks/homework3.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -122,10 +125,10 @@ explanation.</p>
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="homework3.html" title="4. Homework #3"
+          <a href="../ode.html" title="1. Ordinary Differential Equations"
              >next</a> |</li>
         <li class="right" >
-          <a href="proposal.html" title="2. Project Proposal"
+          <a href="homework2.html" title="3. Homework #2"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">CS 523 1.0 documentation</a> &raquo;</li> 
       </ul>
