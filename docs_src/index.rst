@@ -53,6 +53,7 @@ News and Announcements:
 * (09/12) `Homework #1 <homeworks/homework1.html>`_ is due on (09/26).
 * `Project proposal <homeworks/proposal.html>`_ along with names of team members is due on (10/15).
 * (10/08) `Homework #2 <homeworks/homework2.html>`_ is due on (10/29).
+* (11/15) `Homework #3 <homeworks/homework3.html>`_ is due on (12/06).
 
 .. toctree::
     :numbered:
@@ -62,6 +63,7 @@ News and Announcements:
     Homework #1 <homeworks/homework1>
     Project Proposal <homeworks/proposal>
     Homework #2 <homeworks/homework2>
+    Homework #3 <homeworks/homework3>
 
 Contents:
 ---------
@@ -77,6 +79,7 @@ Contents:
     Linear Systems of Equations <linear>
     Marching Cubes <marching_cubes>
     Matrix-Vector Product <dot_product>
+    Introduction to Conjugate Gradients <cg>
 
 Coding Resources:
 -----------------
