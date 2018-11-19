@@ -30,3 +30,7 @@ solution. Submissions should be made on Sakai.
     grid resolution. Compute the *order of convergence*, defined as
     :math:`\log_2(e_{N\times N}/e_{2N\times2N})`, where :math:`e_{N\times N}`
     is the :math:`L_\infty`-norm of the error for an :math:`N\times N` grid.
+
+    **Note:** Please follow the implementation of :math:`\textsf{Conjugate_Gradient}`
+    as described `here <https://github.com/OrionQuest/Nova/blob/master/Library/Tools/src/Krylov_Solvers/Conjugate_Gradient.cpp>`_
+    to make use of the :math:`\textsf{CG_System}` and :math:`\textsf{CG_Vector}` classes.
