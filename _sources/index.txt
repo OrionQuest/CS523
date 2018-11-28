@@ -80,6 +80,7 @@ Contents:
     Marching Cubes <marching_cubes>
     Matrix-Vector Product <dot_product>
     Introduction to Conjugate Gradients <cg>
+    Fast Marching and Velocity Extrapolation <extrapolation>
 
 Coding Resources:
 -----------------
@@ -89,6 +90,7 @@ Coding Resources:
 3. `DART <https://dartsim.github.io/>`_
 4. `Chrono <https://projectchrono.org/>`_
 5. `Mujoco <http://www.mujoco.org/>`_
+6. `MantaFlow <http://mantaflow.com/>`_
 
 Recommended Books:
 ------------------

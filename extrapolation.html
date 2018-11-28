@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>7. Introduction to Conjugate Gradients &mdash; CS 523 1.0 documentation</title>
+    <title>8. Fast Marching and Velocity Extrapolation &mdash; CS 523 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -25,8 +25,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="CS 523 1.0 documentation" href="index.html" />
-    <link rel="next" title="8. Fast Marching and Velocity Extrapolation" href="extrapolation.html" />
-    <link rel="prev" title="6. Matrix-Vector Product" href="dot_product.html" /> 
+    <link rel="prev" title="7. Introduction to Conjugate Gradients" href="cg.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -36,10 +35,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="extrapolation.html" title="8. Fast Marching and Velocity Extrapolation"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="dot_product.html" title="6. Matrix-Vector Product"
+          <a href="cg.html" title="7. Introduction to Conjugate Gradients"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">CS 523 1.0 documentation</a> &raquo;</li> 
       </ul>
@@ -50,11 +46,11 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="introduction-to-conjugate-gradients">
-<h1>7. Introduction to Conjugate Gradients<a class="headerlink" href="#introduction-to-conjugate-gradients" title="Permalink to this headline">¶</a></h1>
-<p>We review the Conjugate Gradients method, which is an iterative Krylov solver
-for solving symmetric and positive definite (SPD) linear systems <span class="math">\(Ax=b\)</span>.</p>
-<p><a class="reference external" href="https://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf">Lecture Notes</a></p>
+  <div class="section" id="fast-marching-and-velocity-extrapolation">
+<h1>8. Fast Marching and Velocity Extrapolation<a class="headerlink" href="#fast-marching-and-velocity-extrapolation" title="Permalink to this headline">¶</a></h1>
+<p>We study the <a class="reference external" href="https://math.berkeley.edu/~sethian/2006/Explanations/fast_marching_explain.html">Fast Marching method</a> for computing signed distance fields. A more accurate version is described <a class="reference external" href="http://physbam.stanford.edu/~fedkiw/papers/stanford2004-07.pdf">here</a> in Section 2.2.</p>
+<p>Fluid velocities are extrapolated outside the liquid region using a similar
+method, as described <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0021999198960909">here</a>.</p>
 </div>
 
 
@@ -64,15 +60,12 @@ for solving symmetric and positive definite (SPD) linear systems <span class="ma
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="dot_product.html"
-                        title="previous chapter">6. Matrix-Vector Product</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="extrapolation.html"
-                        title="next chapter">8. Fast Marching and Velocity Extrapolation</a></p>
+  <p class="topless"><a href="cg.html"
+                        title="previous chapter">7. Introduction to Conjugate Gradients</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/cg.txt"
+      <li><a href="_sources/extrapolation.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -100,10 +93,7 @@ for solving symmetric and positive definite (SPD) linear systems <span class="ma
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="extrapolation.html" title="8. Fast Marching and Velocity Extrapolation"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="dot_product.html" title="6. Matrix-Vector Product"
+          <a href="cg.html" title="7. Introduction to Conjugate Gradients"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">CS 523 1.0 documentation</a> &raquo;</li> 
       </ul>
