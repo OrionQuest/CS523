@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>8. Fast Marching and Velocity Extrapolation &mdash; CS 523 1.0 documentation</title>
+    <title>9. Multigrid Solver &mdash; CS 523 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -25,8 +25,8 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="top" title="CS 523 1.0 documentation" href="index.html" />
-    <link rel="next" title="9. Multigrid Solver" href="multigrid.html" />
-    <link rel="prev" title="7. Introduction to Conjugate Gradients" href="cg.html" /> 
+    <link rel="next" title="10. Variable Density Flow" href="variable.html" />
+    <link rel="prev" title="8. Fast Marching and Velocity Extrapolation" href="extrapolation.html" /> 
   </head>
   <body role="document">
     <div class="related" role="navigation" aria-label="related navigation">
@@ -36,10 +36,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="multigrid.html" title="9. Multigrid Solver"
+          <a href="variable.html" title="10. Variable Density Flow"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="cg.html" title="7. Introduction to Conjugate Gradients"
+          <a href="extrapolation.html" title="8. Fast Marching and Velocity Extrapolation"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">CS 523 1.0 documentation</a> &raquo;</li> 
       </ul>
@@ -50,11 +50,10 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="fast-marching-and-velocity-extrapolation">
-<h1>8. Fast Marching and Velocity Extrapolation<a class="headerlink" href="#fast-marching-and-velocity-extrapolation" title="Permalink to this headline">¶</a></h1>
-<p>We study the <a class="reference external" href="https://math.berkeley.edu/~sethian/2006/Explanations/fast_marching_explain.html">Fast Marching method</a> for computing signed distance fields. A more accurate version is described <a class="reference external" href="http://physbam.stanford.edu/~fedkiw/papers/stanford2004-07.pdf">here</a> in Section 2.2.</p>
-<p>Fluid velocities are extrapolated outside the liquid region using a similar
-method, as described <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0021999198960909">here</a>.</p>
+  <div class="section" id="multigrid-solver">
+<h1>9. Multigrid Solver<a class="headerlink" href="#multigrid-solver" title="Permalink to this headline">¶</a></h1>
+<p>We study the design and implementation of a <a class="reference external" href="https://www.math.ucla.edu/~jteran/papers/MST10.pdf">Multigrid solver</a> for incompressible
+fluids.</p>
 </div>
 
 
@@ -64,15 +63,15 @@ method, as described <a class="reference external" href="https://www.sciencedire
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="cg.html"
-                        title="previous chapter">7. Introduction to Conjugate Gradients</a></p>
+  <p class="topless"><a href="extrapolation.html"
+                        title="previous chapter">8. Fast Marching and Velocity Extrapolation</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="multigrid.html"
-                        title="next chapter">9. Multigrid Solver</a></p>
+  <p class="topless"><a href="variable.html"
+                        title="next chapter">10. Variable Density Flow</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/extrapolation.txt"
+      <li><a href="_sources/multigrid.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -100,10 +99,10 @@ method, as described <a class="reference external" href="https://www.sciencedire
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="multigrid.html" title="9. Multigrid Solver"
+          <a href="variable.html" title="10. Variable Density Flow"
              >next</a> |</li>
         <li class="right" >
-          <a href="cg.html" title="7. Introduction to Conjugate Gradients"
+          <a href="extrapolation.html" title="8. Fast Marching and Velocity Extrapolation"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">CS 523 1.0 documentation</a> &raquo;</li> 
       </ul>
