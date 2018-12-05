@@ -81,6 +81,8 @@ Contents:
     Matrix-Vector Product <dot_product>
     Introduction to Conjugate Gradients <cg>
     Fast Marching and Velocity Extrapolation <extrapolation>
+    Multigrid Solver <multigrid>
+    Variable Density Flow <variable>
 
 Coding Resources:
 -----------------
